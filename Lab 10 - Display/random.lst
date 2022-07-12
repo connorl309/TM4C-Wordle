@@ -1,0 +1,149 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;Random number generator;
+    2 00000000         ; Linear congruential generator 
+    3 00000000         ; from Numerical Recipes by Press et al.
+    4 00000000         ; Jonathan Valvano
+    5 00000000         
+    6 00000000         ; How to use: 
+    7 00000000         ; 1) call Random_Init once with a seed
+    8 00000000         ;     Random_Init(1);
+    9 00000000         ;     Random_Init(NVIC_CURRENT_R);
+   10 00000000         ; 2) call Random over and over to get a new random numbe
+                       r
+   11 00000000         ;   n = Random();    // 32 bit number
+   12 00000000         ;   m = (Random()>>24)%60; // a number from 0 to 59
+   13 00000000         
+   14 00000000                 THUMB
+   15 00000000                 AREA             DATA, ALIGN=2
+   16 00000000 00 00 00 
+              00       M       SPACE            4
+   17 00000004                 ALIGN
+   18 00000004                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+   19 00000000                 EXPORT           Random_Init
+   20 00000000                 EXPORT           Random
+   21 00000000                 EXPORT           Random32
+   22 00000000         Random_Init
+   23 00000000 4A0B            LDR              R2,=M       ; R4 = &M, R4 point
+                                                            s to M
+   24 00000002 6010            STR              R0,[R2]     ; M=1
+   25 00000004 4770            BX               LR
+   26 00000006         ;------------Random32------------
+   27 00000006         ; Return R0= random number
+   28 00000006         ; Linear congruential generator 
+   29 00000006         ; from Numerical Recipes by Press et al.
+   30 00000006 4A0A    Random32
+                               LDR              R2,=M       ; R2 = &M, R4 point
+                                                            s to M
+   31 00000008 6810            LDR              R0,[R2]     ; R0=M
+   32 0000000A 490A            LDR              R1,=1664525
+   33 0000000C FB00 F001       MUL              R0,R0,R1    ; R0 = 1664525*M
+   34 00000010 4909            LDR              R1,=1013904223
+   35 00000012 4408            ADD              R0,R1       ; 1664525*M+1013904
+                                                            223 
+   36 00000014 6010            STR              R0,[R2]     ; store M
+   37 00000016 4770            BX               LR
+   38 00000018         
+   39 00000018         ;------------Random------------
+   40 00000018         ; Return R0= random number, 0 to 255
+   41 00000018         ; Linear congruential generator 
+   42 00000018         ; from Numerical Recipes by Press et al.
+   43 00000018 4A05    Random  LDR              R2,=M       ; R2 = &M, R4 point
+                                                            s to M
+   44 0000001A 6810            LDR              R0,[R2]     ; R0=M
+   45 0000001C 4905            LDR              R1,=1664525
+   46 0000001E FB00 F001       MUL              R0,R0,R1    ; R0 = 1664525*M
+   47 00000022 4905            LDR              R1,=1013904223
+   48 00000024 4408            ADD              R0,R1       ; 1664525*M+1013904
+                                                            223 
+   49 00000026 6010            STR              R0,[R2]     ; store M
+   50 00000028 EA4F 6010       LSR              R0,R0,#24   ; top 8 bits of num
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+                                                            ber
+   51 0000002C 4770            BX               LR
+   52 0000002E 00 00           ALIGN
+   53 00000030                 END
+              00000000 
+              0019660D 
+              3C6EF35F 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
+ork --depend=.\random.d -o.\random.o -I.\RTE\_SpaceInvaders -IC:\Users\victo\Ap
+pData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include -IC:\Users\victo\AppDa
+ta\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123 --predefine="__UV
+ISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="TM4C123GH6PM SE
+TA 1" --predefine="_RTE_ SETA 1" --list=.\random.lst random.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATA 00000000
+
+Symbol: DATA
+   Definitions
+      At line 15 in file random.s
+   Uses
+      None
+Comment: DATA unused
+M 00000000
+
+Symbol: M
+   Definitions
+      At line 16 in file random.s
+   Uses
+      At line 23 in file random.s
+      At line 30 in file random.s
+      At line 43 in file random.s
+
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 18 in file random.s
+   Uses
+      None
+Comment: .text unused
+Random 00000018
+
+Symbol: Random
+   Definitions
+      At line 43 in file random.s
+   Uses
+      At line 20 in file random.s
+Comment: Random used once
+Random32 00000006
+
+Symbol: Random32
+   Definitions
+      At line 30 in file random.s
+   Uses
+      At line 21 in file random.s
+Comment: Random32 used once
+Random_Init 00000000
+
+Symbol: Random_Init
+   Definitions
+      At line 22 in file random.s
+   Uses
+      At line 19 in file random.s
+Comment: Random_Init used once
+4 symbols
+341 symbols in table

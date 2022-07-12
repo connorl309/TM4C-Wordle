@@ -1,0 +1,84 @@
+Dependencies for Project 'SpaceInvaders', Target 'SpaceInvaders': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\startup.s)(0x6260A74B)(--cpu Cortex-M4 -g --apcs=interwork -I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1" --pd "_RTE_ SETA 1"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\random.s)(0x626C60D2)(--cpu Cortex-M4 -g --apcs=interwork -I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1" --pd "_RTE_ SETA 1"--list .\random.lst --xref -o .\random.o --depend .\random.d)
+F (.\DAC.c)(0x626CA647)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\dac.o --omf_browse .\dac.crf --depend .\dac.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+F (.\ADC.c)(0x6260A74A)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\adc.o --omf_browse .\adc.crf --depend .\adc.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+F (.\Timer0.c)(0x626EF564)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\timer0.o --omf_browse .\timer0.crf --depend .\timer0.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (Timer0.h)(0x626C7C35)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+F (.\Timer1.c)(0x626F01A3)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\timer1.o --omf_browse .\timer1.crf --depend .\timer1.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+F (.\LCD.s)(0x6260A74A)(--cpu Cortex-M4 -g --apcs=interwork -I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1" --pd "_RTE_ SETA 1"--list .\lcd.lst --xref -o .\lcd.o --depend .\lcd.d)
+F (.\Print.s)(0x6260A74B)(--cpu Cortex-M4 -g --apcs=interwork -I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1" --pd "_RTE_ SETA 1"--list .\print.lst --xref -o .\print.o --depend .\print.d)
+F (.\SpaceInvaders.c)(0x626F0D8E)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\spaceinvaders.o --omf_browse .\spaceinvaders.crf --depend .\spaceinvaders.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x6025E854)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025E85E)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x6025E858)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+I (ST7735.h)(0x6260A74B)
+I (Print.h)(0x6260A74B)
+I (Random.h)(0x6260A74B)
+I (TExaS.h)(0x6260A74B)
+I (Images.h)(0x626C5ECF)
+I (Timer1.h)(0x6260A74B)
+I (Timer2.h)(0x626F0551)
+I (Uart.h)(0x626AF4F5)
+I (C:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\tm4c123gh6pm.h)(0x551052AC)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B75486)
+I (Fifo.h)(0x6260A74A)
+I (Sound.h)(0x626CB83F)
+I (DAC.h)(0x6260A74A)
+F (.\ST7735.c)(0x6261F970)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\st7735.o --omf_browse .\st7735.crf --depend .\st7735.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x6025E854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (ST7735.h)(0x6260A74B)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+F (.\TExaS.c)(0x6260A74B)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\texas.o --omf_browse .\texas.crf --depend .\texas.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+I (TExaS.h)(0x6260A74B)
+I (PLL.h)(0x6260A74A)
+F (.\PLL.c)(0x6260A74A)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (PLL.h)(0x6260A74A)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+F (.\Uart.c)(0x626F0650)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (Fifo.h)(0x6260A74A)
+I (UART.h)(0x626AF4F5)
+I (C:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\tm4c123gh6pm.h)(0x551052AC)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D4ADC2)
+I (C:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B75486)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+F (.\Uart.h)(0x626AF4F5)()
+F (.\Fifo.c)(0x6260A74A)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\fifo.o --omf_browse .\fifo.crf --depend .\fifo.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+F (.\Fifo.h)(0x6260A74A)()
+F (.\Sound.c)(0x626EFDF0)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\sound.o --omf_browse .\sound.crf --depend .\sound.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+I (Sound.h)(0x626CB83F)
+I (DAC.h)(0x6260A74A)
+F (.\Sound.h)(0x626CB83F)()
+F (.\Timer2.c)(0x626F0CCD)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\.. --C99-I.\RTE\_SpaceInvaders-IC:\Users\victo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\victo\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="536" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\timer2.o --omf_browse .\timer2.crf --depend .\timer2.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025E85E)
+I (../inc/tm4c123gh6pm.h)(0x5388C2DA)
+I (Timer2.h)(0x626F0551)
+F (.\Timer2.h)(0x626F0551)()

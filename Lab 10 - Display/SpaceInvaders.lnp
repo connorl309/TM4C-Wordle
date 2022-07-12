@@ -1,0 +1,20 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\startup.o"
+".\random.o"
+".\dac.o"
+".\adc.o"
+".\timer0.o"
+".\timer1.o"
+".\lcd.o"
+".\print.o"
+".\spaceinvaders.o"
+".\st7735.o"
+".\texas.o"
+".\pll.o"
+".\uart.o"
+".\fifo.o"
+".\sound.o"
+".\timer2.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\SpaceInvaders.map" -o .\SpaceInvaders.axf
